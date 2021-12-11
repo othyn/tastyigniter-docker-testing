@@ -2,6 +2,11 @@
 
 A simple and easy Docker testing environment for [TastyIgniter](https://github.com/tastyigniter/TastyIgniter).
 
+## NOTE ON A REQUIRED CHANGE
+
+Once my PR for unattended installation is merged into main, this repo can be significantly changed so that the build of
+TastyIgniter can be placed into the Dockerfile itself.
+
 ## Setup
 
 Ensure that you are happy with any defaults in `.env.example`, then simply run:
