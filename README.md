@@ -30,13 +30,21 @@ This will;
 
 If you're working from a local git development version of TastyIgniter in `~/git/tastyigniter`, that can be used as a source for this repo.
 
-Use the command;
+Use the command:
 
 ```sh
 make setup-dev
 ```
 
 To do pretty much what the `make setup` command does, but sourcing the TastyIgniter source code from the local cloned git version of TastyIgniter in `~/git/tastyigniter`, which is really handy for testing of TastyIgniter.
+
+Database migration may fail during the above command due to the MySQL container not coming online fast enough. If so, just run:
+
+```sh
+make install-dev
+```
+
+Which will re-run just the specific installation part of the process, which should now work fine.
 
 ### Why port 80 by default?
 
